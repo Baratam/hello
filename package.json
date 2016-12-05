@@ -1,0 +1,13 @@
+{
+  "name": "pochello",
+  "version": "0.0.1",
+  "description": "pochello",
+  "author": "Subbu",
+
+  "dependencies": {
+    "grunt": "0.4.1"
+	
+  }
+  
+ 
+}

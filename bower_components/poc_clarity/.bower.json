@@ -1,0 +1,25 @@
+{
+  "name": "poc_clarity",
+  "dependencies": {
+    "mobile-angular-ui": "~1.1.0-beta.29"
+  },
+  "devDependencies": {
+    "angular": "1.2.18",
+    "angular-route": "1.2.18",
+    "angular-mocks": "1.2.18",
+    "bootstrap": "3.1.1",
+    "angular-animate": "1.2.18",
+    "angular-bootstrap": "0.10.0",
+    "capapp-style": "https://github.com/FS-CodingNight/capapp-style.git#master"
+  },
+  "homepage": "https://github.com/Baratam/poc_clarity",
+  "_release": "e09d1ab8c0",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "e09d1ab8c087199457e0457923c88812db9994db"
+  },
+  "_source": "https://github.com/Baratam/poc_clarity.git",
+  "_target": "*",
+  "_originalSource": "https://github.com/Baratam/poc_clarity.git"
+}

@@ -1,0 +1,116 @@
+<!doctype html>
+<html ng-app="capapp">
+  <head>
+    
+    
+    <link rel="stylesheet" href="lib/mobile-angular-ui/dist/css/mobile-angular-ui-base.min.css" />
+    <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="app.css">
+
+  </head>
+  <body ng-controller="capAppContoller" ng-class="has-sidebar-left">
+
+    <div class="sidebar sidebar-left" toggleable parent-active-class="sidebar-left-in" id="mainSidebar">
+      <div class="scrollable">
+        <div class="scrollable-content">
+          <div class="list-group" toggle="off" bubble target="mainSidebar">
+		   <a class="list-group-item" href="#"><span class="glyphicon glyphicon-home"></span> Home</a>
+            <a class="list-group-item" href="#/clarity/index"><span class="glyphicon glyphicon-user"></span> Timesheets</a>
+            <a class="list-group-item" href="#/agenda/agendaHome"><span class="glyphicon glyphicon-list-alt"></span> Agenda</a>
+            <a class="list-group-item" href="#"><span class="glyphicon glyphicon-th-large"></span> Leaves </a>
+            <a class="list-group-item" href="#"><span class="glyphicon glyphicon-envelope"></span> Mails</a>
+			<a class="list-group-item" href="#"><span class="glyphicon glyphicon-warning-sign"></span> Alerts</a>
+			<a class="list-group-item" href="#"><span class="glyphicon glyphicon-eye-open"></span> Search</a>
+			<a class="list-group-item" href="#"><span class="glyphicon glyphicon-plane"></span> Travel</a>
+			<a class="list-group-item" href="#"><span class="glyphicon glyphicon-euro"></span> Stock Price</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+    <div class="app">
+
+        <div class="navbar navbar-fixed-top">
+          <div class="container header">
+            <div class="row row-medium  ">
+              <div class="col-xs-3 col-sm-2 col-md-1 block logo" style="text-align:center; padding:0;" ng-click="toggle('mainSidebar')">
+                <img src="images/logo.png" alt="logo" style="height: 70px;"/>
+              </div>
+              <div class="col-xs-9 col-ys-10  col-sm-10 col-md-11 block block-color2 date">
+                <style="color:white"><b><span >{{day}}</span></b></style>
+                <style="color:white"><span >{{date}}</span></style>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="navbar navbar-fixed-bottom" ng-show="showFooter">
+          <div class="container footer">
+            <div class="row row-medium">
+              <div class="col-xs-3 col-ys-2 col-sm-2 col-md-1 block block-color1"><a class="button button-back" href="javascript:history.go(-1)"></a></div>
+              <div class="col-xs-6 col-ys-8 col-sm-8 col-md-10 block block-color0"><a class="button button-menu" href="#/"></a></div>
+              <div class="col-xs-3 col-ys-2 col-sm-2 col-md-1 block block-color2"><a class="button button-logoff" href="#/authentication"></a></div>
+            </div>
+          </div>
+        </div>
+        <div class="container main">
+          <div ng-view ></div>
+        </div>
+      </div>
+
+
+     
+
+    <script type="text/javascript" src="lib/jquery/dist/jquery.js"></script>
+
+    <script type="text/javascript" src="lib/angular/angular.js"></script>
+    <script type="text/javascript" src="lib/angular-route/angular-route.js"></script>
+    <script type="text/javascript" src="lib/angular-mocks/angular-mocks.js"></script>
+
+    <script type="text/javascript" src="lib/mobile-angular-ui/dist/js/mobile-angular-ui.min.js"></script>
+
+    <script type="text/javascript" src="lib/angular-bootstrap/ui-bootstrap.js"></script>
+    
+    <script type="text/javascript" src="lib/ngAutocomplete/src/ngAutocomplete.js"></script>
+
+    <!-- build:js app.js -->
+<!--
+    <script type="text/javascript" src="corpapp-module-linkedin/dist/module.js"></script>
+    <script type="text/javascript" src="corpapp-module-offcanvas/dist/module.js"></script>
+
+    <script type="text/javascript" src="capapp-carpool/dist/module.js"></script>
+    <script type="text/javascript" src="capapp-carpool/dist/mocks.js"></script>
+
+    <script type="text/javascript" src="capapp-clarity/dist/module.js"></script>
+    <script type="text/javascript" src="capapp-clarity/dist/mocks.js"></script>
+
+    <script type="text/javascript" src="capapp-peoplefinder/dist/module.js"></script>
+    <script type="text/javascript" src="capapp-peoplefinder/dist/mocks.js"></script>
+
+    <script type="text/javascript" src="capapp-advantageyou/dist/module.js"></script>
+    <script type="text/javascript" src="capapp-advantageyou/dist/mocks.js"></script>
+
+    <script type="text/javascript" src="capapp-expenses/dist/module.js"></script>
+    <script type="text/javascript" src="capapp-expenses/dist/mocks.js"></script>
+
+    <script type="text/javascript" src="capapp-goedbezig/dist/module.js"></script>
+    <script type="text/javascript" src="capapp-goedbezig/dist/mocks.js"></script>
+
+    <script type="text/javascript" src="capapp-modulemanager/dist/module.js"></script>
+    <script type="text/javascript" src="capapp-modulemanager/dist/mocks.js"></script>  -->
+
+    <script type="text/javascript" src="module.js"></script>
+    <!-- /build -->
+
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?libraries=places&sensor=false"></script>
+    <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/nvd3/1.1.15-beta/nv.d3.min.js"></script>
+
+   <!-- <script type="text/javascript" src="lib/ngCordova/dist/ng-cordova.js"></script>
+    <script type="text/javascript" src="phonegap.js"></script>
+    <script type="text/javascript">
+      app.initialize();
+    </script>  -->
+
+  </body>
+</html>
