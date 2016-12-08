@@ -26,7 +26,7 @@
 </widget>  -->
 
 <widget id="com.example.hello" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
-    <name>C2W</name>
+    <name>CWC</name>
     <description>
         Capgemini with Client
     </description>

@@ -14,6 +14,10 @@ angular.module('capapp')
 			account: "",
 			bPhone: "",
 			mobile:"",
+			to:"",
+			cc:"",
+			subject:"",
+			message:""
 			};
 });
 

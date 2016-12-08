@@ -34,7 +34,7 @@ angular.module('capapp')
      //   $http.put("http://localhost:8080/capapi/api/users/me", $scope.user).success(function(){
       //  	$log.debug("Saved Profile");
         //});
-		alert("User Registered");
+		alert("Mail Sent");
     };
 
 	// Show and Hide footer
